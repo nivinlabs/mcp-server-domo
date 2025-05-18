@@ -3,7 +3,7 @@ from fastapi.responses import StreamingResponse
 import asyncio
 
 # Initialize FastMCP server
-mcp = FastMCP("SSE-Demo")
+mcp = FastMCP("SSE-Demo", host="0.0.0.0", port=8080)
 
 
 # SSE tool that streams the process of adding numbers
